@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Chaotic Portfolio</title>
+    <!-- Linking Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom styles -->
     <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+        /* Add your custom styles here */
+        /* Custom hero section */
+        .hero {
+            background-image: url('https://source.unsplash.com/random');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
+        /* Custom section styles */
+        .section {
+            padding: 50px 0;
             text-align: center;
         }
-        nav {
-            text-align: center;
-            padding: 10px 0;
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #666;
         }
-        nav a:hover {
-            color: #007bff;
-        }
-        section {
-            padding: 20px;
-        }
+        /* Custom footer */
         footer {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -46,28 +50,41 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Add some information about yourself here.</p>
+    <!-- Hero section -->
+    <section class="hero">
+        <div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold">Welcome to My Chaotic Portfolio</h1>
+            <p class="mt-4 text-lg sm:text-xl md:text-2xl">Where creativity knows no bounds!</p>
+        </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Add information about your projects here.</p>
+
+    <!-- About Me section -->
+    <section class="bg-gray-100 section" id="about">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl">About Me</h2>
+            <p class="mt-4 text-xl sm:text-2xl">I'm a passionate and adventurous individual who loves to explore the endless possibilities of creativity.</p>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Add contact information here.</p>
+
+    <!-- Projects section -->
+    <section class="bg-gray-200 section" id="projects">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl">Projects</h2>
+            <p class="mt-4 text-xl sm:text-2xl">Check out some of my mind-blowing projects!</p>
+        </div>
     </section>
+
+    <!-- Contact section -->
+    <section class="bg-gray-300 section" id="contact">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl">Contact</h2>
+            <p class="mt-4 text-xl sm:text-2xl">Let's connect and create something amazing together!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        &copy; 2024 My Portfolio
+        <p>&copy; 2024 My Chaotic Portfolio</p>
     </footer>
 </body>
 </html>
